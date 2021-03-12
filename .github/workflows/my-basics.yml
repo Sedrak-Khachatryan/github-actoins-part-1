@@ -29,5 +29,5 @@ jobs:
     - name: Print Hello Message
       run: echo "Hello World from Deploy job"
       
-    - name: Deployment package
+    - name: Printing Deployment package
       run : echo "Deploy package name is $(( env.DEPLOY_PACKAGE_NAME ))"
