@@ -9,7 +9,7 @@ on:
 jobs:
   my_testing:
 
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-18.04
 
     steps:
     - name: Print Hello Message
@@ -22,7 +22,7 @@ jobs:
          echo "Application name: $(( env.APPLICATION_NAME ))"
         
   my_deploy:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-18.04
     needs: [my_testing]
     
     steps:
